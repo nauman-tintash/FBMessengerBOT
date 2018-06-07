@@ -1,5 +1,6 @@
 {
   "scripts": {
-    "postinstall": "cd messenger-webhook && npm install"
+    "postinstall": "cd messenger-webhook && npm install",
+    "start": "node messenger-webhook/index.js"
   }
 }
