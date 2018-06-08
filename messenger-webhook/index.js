@@ -84,9 +84,11 @@ function handleMessage(sender_psid, received_message) {
     
     // Check if the message contains text
     if (received_message.text) {
-        
         // Create the payload for a basic text message
         response = {
+            //TODO: If you want to send a simple text response, comment out the attachment part and set the text key to the output text.
+//            "text": "Simple Text Message";
+            
             "attachment": {
                 "type": "template",
                 "payload": {
