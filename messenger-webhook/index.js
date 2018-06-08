@@ -92,8 +92,9 @@ function handleMessage(sender_psid, received_message) {
                 "payload": {
                     "template_type": "generic",
                     "elements": [{
-                                 "title": 'You sent the message: "${received_message.text}".',
-                                 "subtitle": "Right?",
+                                 "title": "You sent the message: \"${received_message.text}\".",
+                                 "subtitle": "Right?"
+                                 },
                                  "buttons": [
                                              {
                                              "type": "postback",
