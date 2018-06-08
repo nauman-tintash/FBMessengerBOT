@@ -92,9 +92,8 @@ function handleMessage(sender_psid, received_message) {
                 "payload": {
                     "template_type": "generic",
                     "elements": [{
-                                 "title": "You sent the message: \"${received_message.text}\".",
-                                 "subtitle": "Right?"
-                                 },
+                                 "title": received_message.text,
+                                 "subtitle": "You sent the message, right?",
                                  "buttons": [
                                              {
                                              "type": "postback",
@@ -107,7 +106,7 @@ function handleMessage(sender_psid, received_message) {
                                              "payload": "no",
                                              }
                                              ]
-                                 ]
+                                 }]
                 }
             }
         }
